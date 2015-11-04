@@ -7,7 +7,7 @@
 // @icon        https://media.licdn.com/media/AAEAAQAAAAAAAABGAAAAJGI2MWY0MjE1LTA1MzMtNDVhNi1hMjc3LThmYzk1ZTY1MTU3Yg.png
 // @grant       none
 // @run-at document-start
-// @downloadURL https://raw.githubusercontent.com/DimitrisHub/E-shop.gr_on_steroids/master/E-shop.gr_on_steroids.user.js
+// @downloadURL https://raw.githubusercontent.com/JimTortex/E-shop.gr_on_steroids/master/E-shop.gr_on_steroids.user.js
 // ==/UserScript==
 
 
