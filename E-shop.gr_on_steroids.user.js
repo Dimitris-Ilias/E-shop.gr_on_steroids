@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        E-shop.gr on steroids
 // @description Shows ratings without opening the product page, completely new interface and features,removal of adds and anything space consuming.
-// @version     1.2
+// @version     1.4
 // @author      mhtsos
 // @include     http*www.e-shop.gr/*
 // @icon        https://media.licdn.com/media/AAEAAQAAAAAAAABGAAAAJGI2MWY0MjE1LTA1MzMtNDVhNi1hMjc3LThmYzk1ZTY1MTU3Yg.png
@@ -22,7 +22,7 @@ if (window.top == window.self) {
 function main(){
 	document.getElementsByTagName("html")[0].style.visibility = "visible";							//restore visibility
 
-	document.getElementById("dock").remove();														//remove adds and useless stuff
+	//document.getElementById("dock").remove();														//remove adds and useless stuff
 	//document.getElementById("left_panel_social").remove();
 	if (document.getElementById("web_footer").getElementsByTagName("img")[0]){
 		document.getElementById("web_footer").getElementsByTagName("img")[0].remove();
@@ -162,7 +162,7 @@ function main(){
 	    }
 	};
 
-	if (document.getElementById("web_body")) {              
+/*	if (document.getElementById("web_body")) {              
 	  
 		var web_body = document.getElementById("web_body");
 
@@ -175,7 +175,7 @@ function main(){
 				green_web_body[i].color = "#8AC007";
 			};
 		};
-	};
+	};*/
 
 
 
@@ -211,6 +211,7 @@ function main(){
 						  var img = document.createElement('img');
 						  img.src = src;
 						  img.title = "";
+						  img.style.zIndex = "10000";
 
 						  var link = document.createElement('a');
 						  link.style = "margin-left:0.3em;margin-right:0.3em;float:right;";
@@ -232,11 +233,11 @@ function main(){
 		  tdlist = document.getElementById("web_body").getElementsByTagName("td");
 
 		  for (var i = 0; i < tdlist.length; i++) {
-			  if (tdlist[i].getAttribute("style") === "text-align:left;vertical-align:top;padding:5px 0 5px 10px;color:#8a8a8a;font-size:12px;background-color:#F2F2F2;font-family:Tahoma;"){//ratings magic
-				  var href = tdlist[i].getElementsByClassName("faint_link3")[0].href;
+			  if (tdlist[i].getAttribute("class") === "web-product-title"){//ratings magic
+				  var href = tdlist[i].getElementsByClassName("web-title-link")[0].href;
 				  httpGet(href , tdlist[i]);
 
-				  tdlist[i].parentNode.parentNode.getElementsByTagName("td")[3].getElementsByTagName("img")[0].src = "https://raw.githubusercontent.com/JimTortex/E-shop.gr_on_steroids/master/images/basket.png";
+				  //tdlist[i].parentNode.parentNode.getElementsByTagName("td")[3].getElementsByTagName("img")[0].src = "https://raw.githubusercontent.com/JimTortex/E-shop.gr_on_steroids/master/images/basket.png";
 			  }
 
 			  if (tdlist[i].getAttribute("style") === "text-align:center;vertical-align:middle;padding:5px 0 5px 0;font-size:11px;font-weight:bold;font-family:Verdana;color:555555;line-height:12pt;background-color:#CCCDCF;"){//change bg color and shit on top
