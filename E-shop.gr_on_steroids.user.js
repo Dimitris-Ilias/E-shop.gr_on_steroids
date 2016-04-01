@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        E-shop.gr on steroids
 // @description Shows ratings without having to open each product's page, removes adds and anything space consuming.
-// @version     1.5
+// @version     1.6
 // @author      JimTortex
 // @include     http*www.e-shop.gr/*
 // @icon        https://media.licdn.com/media/AAEAAQAAAAAAAABGAAAAJGI2MWY0MjE1LTA1MzMtNDVhNi1hMjc3LThmYzk1ZTY1MTU3Yg.png
@@ -51,15 +51,8 @@ function main(){
 	link.href = "http://79.170.40.224/jimtortex.com/style.css";
 	link.type = "text/css";
 	link.rel = "stylesheet";
-	cssLinks = document.getElementsByTagName('link');
-	for (var i = 0; i < cssLinks.length; i++) {
-		if (cssLinks[i].href == "http://www.e-shop.gr/style.css") {
-			cssLinks[i].remove();
-			document.getElementsByTagName("head")[0].appendChild(link);
-
-		};
-		
-	};
+	
+	document.getElementsByTagName("head")[0].appendChild(link);
 
 
 
