@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        E-shop.gr on steroids
 // @description Shows ratings without having to open each product's page, removes adds and anything space consuming.
-// @version     1.7
+// @version     1.7.1
 // @author      JimTortex
 // @include     http*www.e-shop.gr/*
 // @icon        https://media.licdn.com/media/AAEAAQAAAAAAAABGAAAAJGI2MWY0MjE1LTA1MzMtNDVhNi1hMjc3LThmYzk1ZTY1MTU3Yg.png
@@ -13,7 +13,7 @@
 
 if (window.top == window.self) {
 
-	document.getElementsByTagName("html")[0].style.visibility = "hidden";							//show blank page till changes made
+	document.getElementsByTagName("html")[0].style.visibility = "hidden";							//show blank page till page loads
 	window.addEventListener ("load", main, false);
 }
 
@@ -26,25 +26,25 @@ function main(){
 	if (document.getElementById("web_footer").getElementsByTagName("img")[0]){
 		document.getElementById("web_footer").getElementsByTagName("img")[0].remove();
 	}
-	if ( document.getElementById("legoplaymobil_side") ){
-		document.getElementById("legoplaymobil_side").remove()
+	if (document.getElementById("slides")){
+		document.getElementById("slides").remove();
 	}
 
-	var frames = document.getElementsByTagName("iframe");											//remove right frame
+/*	var frames = document.getElementsByTagName("iframe");											//remove right frame
 	for (var i = 0; i < frames.length; i++) {
 		if (frames[i].height === "486") {
 			frames[i].remove();
 		}
-	};
+	};*/
 
-	if(document.getElementById("web_body")) {														//remove annoying table :D
+/*	if(document.getElementById("web_body")) {														//remove annoying table :D
 		var annoyingTable = document.getElementById("web_body").getElementsByTagName("table");
 		for (var i = 0; i < annoyingTable.length; i++) {
 			if (annoyingTable[i].width === "97%") {
 				annoyingTable[i].remove();
 			}
 		};
-	}
+	}*/
 
 
 	var link = document.createElement("link");														//load custom css
@@ -56,7 +56,6 @@ function main(){
 
 
 
-	
 
 	document.body.onkeydown = function(event){														//press s and search focuses
 		if (event.keyCode == 83) {
@@ -80,13 +79,6 @@ function main(){
 	};
 
 
-
-	var table_title = document.getElementsByClassName("shop_table_title");							//replace "deite ola ta prointa" with an image
-	for (var i = 0; i < table_title.length; i++) {
-	    if (table_title[i].getElementsByTagName("a")[0]) {
-			table_title[i].getElementsByTagName("a")[0].innerHTML = "<img src='https://raw.githubusercontent.com/JimTortex/E-shop.gr_on_steroids/master/images/list.png'>"
-	    }
-	};
 
 
 
@@ -141,7 +133,7 @@ function main(){
 								td.appendChild(link);
 								 
 					    }
-								if (td.getElementsByTagName("font")[1]){
+								if (td.getElementsByTagName("font")[1]){							//"EKPTWSI %" change color from annoying red to calm blue :D
 										 td.getElementsByTagName("font")[1].setAttribute("color", "#0858a7");
 								}
 					}
@@ -161,7 +153,7 @@ function main(){
 
 			  }
 
-			  if (tdlist[i].getAttribute("style") === "text-align:center;vertical-align:middle;padding:5px 0 5px 0;font-size:11px;font-weight:bold;font-family:Verdana;color:555555;line-height:12pt;background-color:#CCCDCF;"){//change bg color and shit on top
+			  if (tdlist[i].getAttribute("style") === "text-align:center;vertical-align:middle;padding:5px 0 5px 0;font-size:11px;font-weight:bold;font-family:Verdana;color:555555;line-height:12pt;background-color:#CCCDCF;"){//change bg color
 			    tdlist[i].style.background = "#3F4356";
 			    tdlist[i].style.color = "white";
 			    tdlist[i].style.borderRadius = "5px 5px 0 0";
@@ -172,6 +164,6 @@ function main(){
 
 	  processProductsList();
 	  
-	}																								//end if products list
+	}																								//end if products listing
 	
 }
