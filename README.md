@@ -6,5 +6,5 @@ Some other features were added later and more will be added if asked.
 
 -Shows average product rating next to the product listing.  
 -Mouse over the rating to show number of ratings and user comments.  
--Press "s" to search!
+-Press "s" to search!  
 -Removed several annoying adds.
