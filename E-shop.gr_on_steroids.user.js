@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        E-shop.gr on steroids
 // @description Shows ratings without having to open each product's page, removes adds and anything space consuming.
-// @version     1.7.1
+// @version     1.7.2
 // @author      JimTortex
 // @include     http*www.e-shop.gr/*
 // @icon        https://media.licdn.com/media/AAEAAQAAAAAAAABGAAAAJGI2MWY0MjE1LTA1MzMtNDVhNi1hMjc3LThmYzk1ZTY1MTU3Yg.png
