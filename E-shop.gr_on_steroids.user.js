@@ -48,7 +48,7 @@ function main(){
 
 
 	var link = document.createElement("link");														//load custom css
-	link.href = "http://79.170.40.224/jimtortex.com/style.css";
+	link.href = "https://rawgit.com/JimTortex/E-shop.gr_on_steroids/master/style.css";
 	link.type = "text/css";
 	link.rel = "stylesheet";
 	
