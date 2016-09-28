@@ -63,24 +63,12 @@
     background:#F6F6F6                     !important;
 }
 #web_body table tbody:nth-child(2) table tr:nth-child(2) td:nth-child(2) {
-
     text-align: center;
-
 }
-
-
 
 .vitrina_table_title {
     border-bottom: 1px solid rgba(18, 86, 123, 0.48)    !important;
 }
-
-
-#web_footer table:nth-child(3) {
-    background: #273744 !important;
-}
-
-
-
 
 td.shop_table_title {
     background: #383D40 !important;
@@ -102,7 +90,6 @@ td.links_table_links {
 td.links_table_links a {
     color: #444 !important;
 }
-
 
 
 
@@ -144,10 +131,6 @@ td.links_table_links a {
     position: absolute ;
     z-index: 120;
 }
-
-
-
-
 
 
 
