@@ -1,10 +1,9 @@
 # E-shop.gr_on_steroids
 This is a Greasemonkey script. It's main functionality is to make my life easier by showing ratings and comments without having to open each product page individualy on Greek eshop site e-shop.gr.  
-![Demo Img]( 	images/demo.png?raw=true "Demo Img")  
-
-Some other features were added later and more will be added if asked.
-
+  
 -Shows average product rating next to the product listing.  
 -Mouse over the rating to show number of ratings and user comments.  
 -Press "s" to search!  
--Removed several annoying adds.
+-Removed some adds.  
+  
+![Demo Img]( 	images/demo.png?raw=true "Demo Img")  
