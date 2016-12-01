@@ -1,6 +1,6 @@
 # E-shop.gr_on_steroids
 This is a Greasemonkey script. It's main functionality is to make my life easier by showing ratings and comments without having to open each product page individualy on Greek eshop site e-shop.gr.  
-[Demo here](https://raw.githubusercontent.com/JimTortex/E-shop.gr_on_steroids/master/images/demo.png)
+![Demo Img]( 	images/demo.png?raw=true "Demo Img")  
 
 Some other features were added later and more will be added if asked.
 
