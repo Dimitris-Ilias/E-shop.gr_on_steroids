@@ -3,7 +3,6 @@ This is a Greasemonkey script. It's main functionality is to make my life easier
   
 -Shows average product rating next to the product listing.  
 -Mouse over the rating to show number of ratings and user comments.  
--Press "s" to search!  
--Removed some adds.  
+-Press "s" to search!
   
 ![Demo Img]( 	images/demo.png?raw=true "Demo Img")  
