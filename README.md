@@ -3,7 +3,7 @@ This is a Greasemonkey script writen in Javascript. It's main functionality is t
   
 -Shows average product rating next to the product listing.  
 -Mouse over the rating to show number of ratings and user comments.  
--Press "s" to search!
+-Press "s" to search!  
 -Some visual upgrades.
   
 ![Demo Img]( 	images/demo.png?raw=true "Demo Img")  
