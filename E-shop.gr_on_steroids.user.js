@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name        E-shop.gr on steroids
-// @description Shows ratings without having to open each product's page, removes adds and anything space consuming.
-// @version     1.7.2
+// @description Shows ratings without having to open each product's page individually on greek e-shop site e-shop.gr. Plus other minor features like pressing 's' to search.
+// @version     1.7.3
 // @author      JimTortex
+// @homepage    https://github.com/JimTortex/E-shop.gr_on_steroids
 // @include     http*www.e-shop.gr/*
 // @icon        https://media.licdn.com/media/AAEAAQAAAAAAAABGAAAAJGI2MWY0MjE1LTA1MzMtNDVhNi1hMjc3LThmYzk1ZTY1MTU3Yg.png
 // @grant       none
@@ -30,22 +31,6 @@ function main(){
 		document.getElementById("slides").remove();
 	}
 
-/*	var frames = document.getElementsByTagName("iframe");											//remove right frame
-	for (var i = 0; i < frames.length; i++) {
-		if (frames[i].height === "486") {
-			frames[i].remove();
-		}
-	};*/
-
-/*	if(document.getElementById("web_body")) {														//remove annoying table :D
-		var annoyingTable = document.getElementById("web_body").getElementsByTagName("table");
-		for (var i = 0; i < annoyingTable.length; i++) {
-			if (annoyingTable[i].width === "97%") {
-				annoyingTable[i].remove();
-			}
-		};
-	}*/
-
 
 	var link = document.createElement("link");														//load custom css
 	link.href = "https://rawgit.com/JimTortex/E-shop.gr_on_steroids/master/style.css";
@@ -53,8 +38,6 @@ function main(){
 	link.rel = "stylesheet";
 	
 	document.getElementsByTagName("head")[0].appendChild(link);
-
-
 
 
 	document.body.onkeydown = function(event){														//press s and search focuses
@@ -77,10 +60,6 @@ function main(){
 		this.style.display = "none";
 		menu.style.visibility = "visible";
 	};
-
-
-
-
 
 
 	var current_url = window.location.href;
@@ -160,10 +139,7 @@ function main(){
 			  }
 		  }
 	  }
-
-
 	  processProductsList();
-	  
 	}																								//end if products listing
 	
 }
