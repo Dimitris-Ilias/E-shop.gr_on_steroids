@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        E-shop.gr on steroids
 // @description Shows ratings without having to open each product's page individually on greek e-shop site e-shop.gr. Plus other minor features like pressing 's' to search.
-// @version     1.7.3
-// @author      JimTortex
+// @version     0.0.1
+// @author      Dimitris Ilias
 // @homepage    https://github.com/JimTortex/E-shop.gr_on_steroids
 // @include     http*www.e-shop.gr/*
 // @icon        https://raw.githubusercontent.com/Dimitris-Ilias/E-shop.gr_on_steroids/master/images/logo.jpg
@@ -10,6 +10,7 @@
 // @run-at document-start
 // @downloadURL https://raw.githubusercontent.com/JimTortex/E-shop.gr_on_steroids/master/E-shop.gr_on_steroids.user.js
 // ==/UserScript==
+
 if (window.top == window.self) {
 
     document.getElementsByTagName("html")[0].style.visibility = "hidden"; //show blank page till page loads
